@@ -469,18 +469,18 @@ h2.display-font {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 0.8rem;
-  color: var(--color-white);
-  letter-spacing: 0.02em;
+  overflow: hidden;
+  background: var(--color-white);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 0.3rem;
+  box-shadow: var(--shadow-sm);
 }
 
-.experience-avatar--teal {
-  background: linear-gradient(135deg, var(--color-accent-dark), var(--color-navy-light));
-}
-
-.experience-avatar--indigo {
-  background: linear-gradient(135deg, var(--color-indigo), #4338ca);
+.experience-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .date-pill {
